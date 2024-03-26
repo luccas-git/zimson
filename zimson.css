@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.zim img {
+    justify-content: center;
+    width: 250px;
+    height: 150px;
+}
+
+header {
+    align-items: center;
+}
