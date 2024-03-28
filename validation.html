@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var username, password;
+
+        function valid() {
+            username = document.forms["log_in"]["uname"];
+            password = document.forms["log_in"]["pass"];
+
+            if (username.value == "") {
+                alert("plz enter your username");
+                username.focus()
+                return false;
+            }
+
+            if (password.value == "") {
+                alert("plz enter your password");
+                password.focus()
+                return false;
+            }
+
+            if (username.value == "luccas" && password.value == "9655") {
+                alert("login is success");
+                return true;
+            }
+            else {
+                alert("invalid data");
+                return false;
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form action="./img/4.jpg" name="log_in" method="post" onsubmit="return valid()">
+
+
+                <div class="modal-header">
+                    <h1 class="modal-title">LOG_IN </h1>
+                </div>
+
+                <div class="modal-body">
+                    <input type="text" name="uname" placeholder="Username"><br><br>
+                    <input type="password" name="pass" placeholder="Password"><br><br>
+                </div>
+
+                <div class="modal-footer">
+                    <input type="submit">
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

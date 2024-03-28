@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,12 +7,19 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.zim img {
-    justify-content: center;
-    width: 250px;
-    height: 150px;
+#navbarSupportedContent ul {
+    text-align: center;
+
 }
 
-header {
-    align-items: center;
+#navbar {
+    background-color: rgb(1, 1, 54);
+}
+
+#navbar img {
+    border-radius: 50%;
+}
+
+#navbarSupportedContent button {
+    background-color: silver;
 }
